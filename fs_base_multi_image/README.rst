@@ -34,16 +34,16 @@ stored into external filesystems.
 
 The models provided by this addon are:
 
-- ``fs.image``: a model that stores a reference to an image stored into
-  an external filesystem.
-- ``fs.image.relation.mixin``: an abstract model that can be used to as
-  base class for models created to store an image linked to a model.
-  This abstract model defines fields and methods to transparently handle
-  2 cases:
+-  ``fs.image``: a model that stores a reference to an image stored into
+   an external filesystem.
+-  ``fs.image.relation.mixin``: an abstract model that can be used to as
+   base class for models created to store an image linked to a model.
+   This abstract model defines fields and methods to transparently
+   handle 2 cases:
 
-  - the image is specific to the model.
-  - the image is shared between multiple models and therefore is a
-    ``fs.image`` instance linked to the mixin.
+   -  the image is specific to the model.
+   -  the image is shared between multiple models and therefore is a
+      ``fs.image`` instance linked to the mixin.
 
 .. IMPORTANT::
    This is an alpha version, the data model and design can change at any time without warning.
@@ -65,9 +65,9 @@ authenticated user, you can only view the shared images.
 Known issues / Roadmap
 ======================
 
-- Add dedicated widget to ease the addition of new images to a model
-  linked to multiple images. (As it's the case in the
-  *storage_image_product* addon)
+-  Add dedicated widget to ease the addition of new images to a model
+   linked to multiple images. (As it's the case in the
+   *storage_image_product* addon)
 
 Bug Tracker
 ===========
@@ -90,9 +90,9 @@ Authors
 Contributors
 ------------
 
-- Laurent Mignon <laurent.mignon@acsone.eu>
-- Nguyen Minh Chien <chien@trobz.com>
-- Denis Roussel <<denis.roussel@acsone.eu>
+-  Laurent Mignon <laurent.mignon@acsone.eu>
+-  Nguyen Minh Chien <chien@trobz.com>
+-  Denis Roussel <<denis.roussel@acsone.eu>
 
 Maintainers
 -----------
