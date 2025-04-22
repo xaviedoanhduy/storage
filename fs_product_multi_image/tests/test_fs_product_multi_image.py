@@ -7,14 +7,16 @@ import io
 
 from PIL import Image
 
-from odoo.tests.common import TransactionCase
+from odoo.tests import tagged
+
+from odoo.addons.base.tests.common import BaseCommon
 
 
-class TestFsProductMultiImage(TransactionCase):
+@tagged("post_install", "-at_install")
+class TestFsProductMultiImage(BaseCommon):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.env = cls.env(context=dict(cls.env.context, tracking_disable=True))
         cls.white_image = cls._create_image(16, 16, color="#FFFFFF")
         cls.black_image = cls._create_image(16, 16, color="#000000")
         cls.logo_image = cls._create_image(16, 16, color="#FFA500")
